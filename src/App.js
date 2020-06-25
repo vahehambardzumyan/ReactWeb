@@ -3,6 +3,7 @@ import Home from './Components/Home/Home'
 import Cards from './Components/Cards/Cards'
 import { Route } from 'react-router-dom'
 import './App.css'
+import Auth from './Components/Home/Auth/Auth';
 
 class App extends React.Component {
 
@@ -50,6 +51,7 @@ class App extends React.Component {
       <div className='App'>
           <Route path='/' exact component={Home}/>
           <Route path='/cards' render={() => <Cards cardsData={this.state.cardsData}/>}/>
+          <Route path='/auth' render={() => <Auth />}/>
 
          
       </div>
