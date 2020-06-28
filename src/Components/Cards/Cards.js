@@ -2,55 +2,106 @@ import React from 'react';
 import Card from './Card/Card';
 import './Cards.css'
 import ReactDOM from 'react-dom';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 
 
-class Cards extends React.Component {
-    render() {
-        return (
 
-            
-            //     <Carousel className="ankap1">
-            //         <div>
-            //             <img height="400px" width="10px" src="https://images-na.ssl-images-amazon.com/images/I/61kzc1HHlJL._AC_SY879_.jpg" />
-            //             <p className="legend">Legend 1</p>
-            //         </div>
-            //         <div>
-            //             <img height="200px" width="200px" src="https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg" />
-            //             <p className="legend">Legend 2</p>
-            //         </div>
-            //         <div>
-            //             <img height="200px" width="200px" src="https://i.pinimg.com/originals/7a/60/bc/7a60bc0ce22863afefeff3fdc463fce7.jpg" />
-            //             <p className="legend">Legend 3</p>
-            //         </div>
-            //     </Carousel>
-            <div className="ankap" >
-            <CarouselProvider
-                naturalSlideWidth={500}
-                naturalSlideHeight={1000}
-                totalSlides={3}
-            >
-                <Slider>
-                    <Slide index={0}>Mark I
-              <img height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61kzc1HHlJL._AC_SY879_.jpg" />
-                    </Slide>
-                    <Slide index={1}>Mark II
-              <img height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61kzc1HHlJL._AC_SY879_.jpg" /></Slide>
-                    <Slide index={2}>Mark III
-              <img height="150" width="100" src="https://images-na.ssl-images-amazon.com/images/I/61kzc1HHlJL._AC_SY879_.jpg" /></Slide>
-                </Slider>
-                <ButtonBack>Back</ButtonBack>
-                <ButtonNext>Next</ButtonNext>
-            </CarouselProvider>
-            </div>
-        );
+const Cards = (props) => {
+
+
+    var cellCount = 9;
+    var selectedIndex = 0;
+
+    const rotateCarousel = () => {
+        var carousel = document.querySelector('.carousel');
+        var angle = selectedIndex / cellCount * -360;
+        carousel.style.transform = 'translateZ(-288px) rotateY(' + angle + 'deg)';
+
     }
-};
+
+    const prevButton = () => {
+        selectedIndex--;
+        rotateCarousel();
+    }
+
+    const nextButton = () => {
+        selectedIndex++;
+        rotateCarousel();
+    }
+
+
+
+
+    return (
+        <div className='Cards'>
+
+            <button
+                style={{ width: '400px', height: '60px' }}>
+                <p > Choose and call your  iron suit </p>
+            </button>
+            <div class="scene">
+                <div class="carousel">
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/cURGOvH.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/4CpDPZz.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/MwOgE8m.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/xPTLUm7.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/zplopZU.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/eNKZdEs.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/As6cQ2v.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/QQGfYq9.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                    <div class="carousel__cell">
+                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/1dOifR3.jpg" />  </div>
+                        <div class="call-button"> <button  >Call</button></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div className="prevornext">
+                <button onClick={prevButton} class="previous-button">Previous</button>
+                <button onClick={nextButton} class="next-button">Next</button>
+
+            </div>
+
+
+        </div>
+    );
+}
 
 export default Cards;
-// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+
+
+
+
