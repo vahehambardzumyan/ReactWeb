@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css'
-import './audio/jarvis_morning.mp3'
 import { Link } from 'react-router-dom';
 import ReactAudioPlayer from 'react-audio-player';
 

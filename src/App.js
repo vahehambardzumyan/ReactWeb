@@ -1,9 +1,9 @@
 import React from 'react'
 import Home from './Components/Home/Home'
 import Cards from './Components/Cards/Cards'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './App.css'
-import Auth from './Components/Home/Auth/Auth';
+import Auth from './Components/Auth/Auth';
 
 class App extends React.Component {
 
@@ -13,52 +13,47 @@ class App extends React.Component {
       {
         id: '1',
         img: "https://i.pinimg.com/originals/32/d9/93/32d993ba260c6bcbb7cd5fd77347fad1.gif",
+        title: 'The pulpit rock in Lysefjorden, Norway.',
+        userId: {
+          avatar: 'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png',
+          userName: 'David',
+          _id: 'jsdf'
+        },
+        date: '03.06.2020'
       },
       {
-        id: '2',
-        img: "https://i.pinimg.com/564x/31/14/1c/31141c82ec4fcfc5708805b10d085a8d.jpg",
-
-      },
-      {
-        id: '3',
+        id: '1',
         img: "https://i.pinimg.com/originals/32/d9/93/32d993ba260c6bcbb7cd5fd77347fad1.gif",
-
-      }, {
-        id: '4',
-        img: "https://i.pinimg.com/564x/31/14/1c/31141c82ec4fcfc5708805b10d085a8d.jpg",
+        title: 'The pulpit rock in Lysefjorden, Norway.',
+        userId: {
+          avatar: 'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png',
+          userName: 'David',
+          _id: 'jsdf'
+        },
+        date: '03.06.2020'
       },
       {
-        id: '5',
+        id: '1',
         img: "https://i.pinimg.com/originals/32/d9/93/32d993ba260c6bcbb7cd5fd77347fad1.gif",
+        title: 'The pulpit rock in Lysefjorden, Norway.',
+        userId: {
+          avatar: 'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png',
+          userName: 'David',
+          _id: 'jsdf'
+        },
+        date: '03.06.2020'
       },
-     {
-      id: '6',
-      img: "https://i.pinimg.com/originals/32/d9/93/32d993ba260c6bcbb7cd5fd77347fad1.gif",
-    },
-    {
-      id: '7',
-      img: "https://i.pinimg.com/originals/32/d9/93/32d993ba260c6bcbb7cd5fd77347fad1.gif",
-    },
-    {
-      id: '8',
-      img: "https://i.pinimg.com/564x/71/93/d7/7193d7a5d5220eb16ff6d6d87ff30bb1.jpg",
-    },
-    {
-      id: '9',
-      img: "https://i.pinimg.com/564x/ee/04/48/ee0448bc62eeed7aeff5fe2882a31e53.jpg",
-
-    }
   ]
 }
 
   render() {
     return (
       <div className='App'>
+       <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/cards' render={() => <Cards cardsData={this.state.cardsData}/>}/>
           <Route path='/auth' render={() => <Auth />}/>
-
-         
+       </Switch>
       </div>
     )
   }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css'
-import Auth from './Auth/Auth';
 import Main from './Main/Main';
 
 const Home = () => {

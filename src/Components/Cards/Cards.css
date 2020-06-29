@@ -10,6 +10,7 @@
     display: flex;
     background-size: cover; 
     flex-direction: column;
+    /* stex karelia hanel align-itemy ete uzum em hamatexem ejery */
     align-items: center;   
 
 }
@@ -79,7 +80,6 @@ body { font-family: sans-serif; }
     font-weight: bold;
     color: white;
     text-align: center;
-    
 } 
 
 .call-button{
@@ -93,3 +93,48 @@ body { font-family: sans-serif; }
     transition: .4s;
     padding-top: 300px;
 }
+.modal-dialog{
+    margin-left:300px;
+    margin-right:300px;
+    background: rgba(20, 40, 40, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+
+
+
+/*file input */
+.custom-file-input {
+    color: transparent;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select some files';
+    color: white;
+    display: inline-block;
+    background: rgba(20, 20, 20, .6);
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+  
+  
+ .modal-title{
+     font-weight: 800;
+     color:white;
+ }
