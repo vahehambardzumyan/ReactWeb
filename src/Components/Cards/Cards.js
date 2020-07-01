@@ -35,7 +35,10 @@ const Cards = (props) => {
         selectedIndex++;
         rotateCarousel();
     }
-
+    //choose suit
+    const ironsuit = () => {
+    //     suit++;
+    }
 
 
 
@@ -50,12 +53,12 @@ const Cards = (props) => {
                 Launch demo modal
       </Button> */}
 
-            <Modal className="modal" show={show} onHide={handleClose}>
+            <Modal className="modal" show={show} onHide={handleClose}  >
                 <Modal.Header >
                     <Modal.Title>Your suit is coming</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src="https://24.media.tumblr.com/44761f0f60e0ea6a7920ec7585927d48/tumblr_mjfhz86gr01rp4duqo2_500.gif" />
+                    <img alt="G" className="coming" src="https://24.media.tumblr.com/44761f0f60e0ea6a7920ec7585927d48/tumblr_mjfhz86gr01rp4duqo2_500.gif" />
                     {/* <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
                         width="450px"
                         height="450px"
@@ -64,7 +67,7 @@ const Cards = (props) => {
                         display="initial"
                         position="relative" /> */}
                     <p> </p>
-                    <input type="file" name="file" id="file" class="custom-file-input" />
+                    <input type="file" name="file" id="file" className="custom-file-input" />
                     <p> </p>
                 </Modal.Body>
                 <Modal.Footer>
@@ -72,60 +75,60 @@ const Cards = (props) => {
                     <Button variant="primary" onClick={handleClose}> Allow  </Button>
                 </Modal.Footer>
             </Modal>
-            <div class="scene">
-                <div class="carousel">
+            <div className="scene">
+                <div className="carousel">
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/cURGOvH.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/cURGOvH.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/4CpDPZz.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/4CpDPZz.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/MwOgE8m.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/MwOgE8m.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/xPTLUm7.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G"  className="carousel__cell__img" src="https://i.imgur.com/xPTLUm7.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/zplopZU.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/zplopZU.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/eNKZdEs.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/eNKZdEs.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/As6cQ2v.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/As6cQ2v.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/QQGfYq9.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/QQGfYq9.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
-                    <div class="carousel__cell">
-                        <div class="carousel__cell__img" > <img class="carousel__cell__img" src="https://i.imgur.com/1dOifR3.jpg" />  </div>
-                        <div class="call-button"> <button onClick={handleShow} >Call</button></div>
+                    <div className="carousel__cell">
+                        <div className="carousel__cell__img" > <img alt="G" className="carousel__cell__img" src="https://i.imgur.com/1dOifR3.jpg" />  </div>
+                        <div className="call-button"> <button onClick={handleShow} >Call</button></div>
                     </div>
 
                 </div>
 
             </div>
             <div className="prevornext">
-                <button onClick={prevButton} class="previous-button">Previous</button>
-                <button onClick={nextButton} class="next-button">Next</button>
+                <button onClick={prevButton} className="previous-button">Previous</button>
+                <button onClick={nextButton} className="next-button">Next</button>
 
             </div>
 

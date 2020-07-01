@@ -17,13 +17,26 @@
   }
   
  .but{
-  border: 1px solid rgba(10, 180, 180, 1);
+  border: 1px solid rgb(0,0,255);
   background: rgba(20, 20, 20, .6);
-  font-size: 18px;
+  font-size: 25px;
   color: white;
-  margin-top: 20px;
+  margin-top: 8px;
   padding: 10px 50px;
   cursor: pointer;
   transition: .4s;
+  width: 350px;
+  height: 60px;
+  font-weight: 700;
  }
- 
+
+ .menu{
+   display: flex;
+   flex-direction: column;
+   padding-left: 40px;
+ }
+ .jarv{
+   padding-top: 35px;
+   /* width: 500px;
+   height: 400px; */
+ }

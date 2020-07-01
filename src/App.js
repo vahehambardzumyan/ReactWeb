@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Components/Home/Home'
-import Cards from './Components/Cards/Cards'
+import Profile from  './Components/myProfile/Profile.js'
+;import Cards from './Components/Cards/Cards'
 import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import Auth from './Components/Auth/Auth';
@@ -53,6 +54,7 @@ class App extends React.Component {
           <Route path='/' exact component={Home}/>
           <Route path='/cards' render={() => <Cards cardsData={this.state.cardsData}/>}/>
           <Route path='/auth' render={() => <Auth />}/>
+          <Route path='/myProfile' exact component={Profile} />
        </Switch>
       </div>
     )

@@ -1,0 +1,16 @@
+.Profile{
+  height: 100%;
+  flex-direction: column;
+  background-image: url('https://www.syfy.com/sites/syfy/files/wire/legacy/ironman3cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+}
+
+.bgcard {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 0px;
+  background: rgba(20, 40, 40, .8);
+}

@@ -5,9 +5,6 @@ import './Modal.css'
 
 
  const SimpleModal = (props) =>  {
-
- 
-
   return (
     <div className='Modal'>
       <Modal
@@ -15,16 +12,6 @@ import './Modal.css'
         open={props.open}
         onClose={props.handleClose}
       >
-      <div
-        className='addPost'>
-          <p 
-          className='para'
-          onClick={handleOpen}>+</p>
-         <SimpleModal
-          handleClose={handleClose}
-          open={open}
-          body={body} /> 
-      </div>
        {props.body}
       </Modal>
     </div>
@@ -32,3 +19,7 @@ import './Modal.css'
 }
 
 export default SimpleModal
+
+
+
+//////////

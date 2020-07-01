@@ -24,13 +24,13 @@ const SignIN = () => {
         <div
             className={rot ? ['flip-card-inner', 'rot'].join(' ') : "flip-card-inner"}>
             <div className="flip-card-front">
-                <div class="signupSection">
-                    <div class="info">
+                <div className="signupSection">
+                    <div className="info">
                         <h2 className="h2">Stand by for rational and biometric scan</h2>
 
-                        <p onClick={() => setRotate(!rot)} rot={rot} class="sign">  Have an account? {rot ? 'SignUp' : "SignIn"} </p>
+                        <p  className="sign">  Have an account?  </p>
 
-                        <img className='scan' src="https://i.pinimg.com/originals/12/e8/a6/12e8a6a547e317524121f7a5d6084036.gif" />
+                        <img alt="G" className='scan' src="https://i.pinimg.com/originals/12/e8/a6/12e8a6a547e317524121f7a5d6084036.gif" />
 
                     </div>
 

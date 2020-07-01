@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import './Auth.css'
-import { red, blue } from 'color-name';
-import { Formik } from 'formik';
-import * as Yup from 'yup'
-import Error from './Reg/Error'
 import SignIN from './Reg/SignIn/SignIn';
 import SignUp from './Reg/SignUp/SignUp';
 
@@ -12,11 +8,9 @@ const Auth = () => {
     const [rot, setRotate] = useState(false)
     return (
         <div className='Auth'>
-
   <button
       onClick={() => setRotate(!rot)} rot={rot} 
       style={{width: '400px', height: '60px'}}>
-      
        <p > {rot ?  "Have an account? SignIn": " Don't have an account? Register Here"}  </p>
         </button>
       <br />
